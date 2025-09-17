@@ -174,7 +174,7 @@ export default function OnboardingScreen() {
     },
     languageSelectionContainer: {
       alignItems: 'center',
-      marginTop: 20,
+      marginTop: 40,
     },
     languageButton: {
       backgroundColor: 'rgba(255, 255, 255, 0.9)',
@@ -213,7 +213,7 @@ export default function OnboardingScreen() {
     },
     pagination: {
       position: 'absolute',
-      bottom: 180,
+      bottom: 97,
       left: 0,
       right: 0,
       flexDirection: 'row',
@@ -335,7 +335,7 @@ export default function OnboardingScreen() {
         pagingEnabled
         showsHorizontalScrollIndicator={false}
         style={styles.scrollView}
-        scrollEnabled={false} // Disable manual scrolling
+        scrollEnabled={true} // Disable manual scrolling
         onMomentumScrollEnd={(event) => {
           const index = Math.round(event.nativeEvent.contentOffset.x / width);
           setCurrentIndex(index);

@@ -24,7 +24,7 @@ export default function FavoritesScreen() {
     },
     header: {
       paddingHorizontal: 20,
-      paddingTop: 16,
+      paddingTop: 50,
       paddingBottom: 20,
       backgroundColor: theme.colors.background,
     },

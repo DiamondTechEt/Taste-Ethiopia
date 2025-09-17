@@ -1,8 +1,7 @@
 import { useState, useEffect } from 'react';
 import { View, Text, FlatList, StyleSheet, SafeAreaView } from 'react-native';
 import { useRouter } from 'expo-router';
-import { RecipeCard } from '@/components/RecipeCard';
-import { FilterChips } from '@/components/FilterChips';
+import { RecipeCard } from '@/components/RecipeCard'; 
 import { useTheme } from '@/hooks/useTheme';
 import { useLanguage } from '@/hooks/useLanguage';
 import { useRecipes } from '@/hooks/useRecipes';
@@ -53,7 +52,7 @@ export default function HomeScreen() {
     },
     header: {
       paddingHorizontal: 20,
-      paddingTop: 16,
+      paddingTop: 50,
       paddingBottom: 20,
       backgroundColor: theme.colors.background,
     },
@@ -96,11 +95,8 @@ export default function HomeScreen() {
         </Text>
       </View>
 
-      <FilterChips
-        categories={categories}
-        selectedCategory={selectedCategory}
-        onSelectCategory={setSelectedCategory}
-      />
+    
+ {/* <AdviceSection /> */}
 
       <FlatList
         data={filteredRecipes}

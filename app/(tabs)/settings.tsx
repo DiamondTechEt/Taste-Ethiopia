@@ -1,9 +1,9 @@
-import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, Switch, Alert, Modal, ScrollView } from 'react-native';
+import { View, Text, TouchableOpacity, StyleSheet, SafeAreaView, Switch, Alert, Modal, ScrollView, Linking } from 'react-native';
 import { Moon, Sun, Globe, Info, Trash2, X } from 'lucide-react-native';
 import { useTheme } from '@/hooks/useTheme';
 import { useLanguage } from '@/hooks/useLanguage';
 import { StorageService } from '@/utils/storage';
-import { useState } from 'react';
+import { useState } from 'react'; 
 
 export default function SettingsScreen() {
   const { theme, toggleTheme, isDark } = useTheme();
@@ -44,11 +44,11 @@ export default function SettingsScreen() {
   const styles = StyleSheet.create({
     container: {
       flex: 1,
-      backgroundColor: theme.colors.background,
+      backgroundColor: theme.colors.background, 
     },
     header: {
       paddingHorizontal: 20,
-      paddingTop: 16,
+      paddingTop: 50,
       paddingBottom: 20,
       backgroundColor: theme.colors.background,
     },
@@ -146,6 +146,7 @@ export default function SettingsScreen() {
       alignItems: 'center',
       paddingVertical: 24,
       paddingHorizontal: 20,
+      marginBottom: 16,
     },
     appName: {
       fontSize: 20,
@@ -176,6 +177,7 @@ export default function SettingsScreen() {
       margin: 20,
       maxHeight: '80%',
       width: '90%',
+      paddingBottom: 16,
     },
     modalHeader: {
       flexDirection: 'row',
@@ -240,6 +242,11 @@ export default function SettingsScreen() {
       color: theme.colors.textSecondary,
       lineHeight: 20,
     },
+    
+  emailLink: {
+    color: '#007AFF', // iOS blue
+    textDecorationLine: 'underline',
+  },
   });
 
   return (
@@ -463,11 +470,17 @@ export default function SettingsScreen() {
                   {t('Support & Feedback', 'ድጋፍ እና አስተያየት')}
                 </Text>
                 <Text style={styles.contactText}>
-                  {t(
-                    'We value your feedback and suggestions. If you have any questions, recipe requests, or ideas for improvement, please don\'t hesitate to reach out to us.',
-                    'የእርስዎን አስተያየት እና ሀሳቦች እንዋጋለን። ማንኛውም ጥያቄ፣ የምግብ አሰራር ጥያቄ ወይም የማሻሻያ ሀሳብ ካለዎት እባክዎን እኛን ለማግኘት አያመንቱ።'
-                  )}
-                </Text>
+    {t(
+      'We value your feedback and suggestions. If you have any questions, recipe requests, or ideas for improvement, please don\'t hesitate to reach out to us.',
+      'የእርስዎን አስተያየት እና ሀሳቦች እንዋጋለን። ማንኛውም ጥያቄ፣ የምግብ አሰራር ጥያቄ ወይም የማሻሻያ ሀሳብ ካለዎት እባክዎን እኛን ለማግኘት አያመንቱ።'
+    )}{' '}
+    <Text
+      style={styles.emailLink}
+      onPress={() => Linking.openURL('mailto:layfokru@gmail.com')}
+     
+    >   {t('Send', 'ላክ')}
+    </Text>
+  </Text>
               </View>
             </ScrollView>
           </View>
