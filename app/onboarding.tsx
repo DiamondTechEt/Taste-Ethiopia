@@ -17,7 +17,7 @@ const onboardingData = [
     titleAm: 'ቋንቋዎን ይምረጡ',
     descriptionEn: 'Select your preferred language to get started with Ethiopian Cuisine app.',
     descriptionAm: 'የኢትዮጵያ ምግብ መተግበሪያን ለመጀመር የሚፈልጉትን ቋንቋ ይምረጡ።',
-    image: require('@/assets/images/icon.png'),
+    image: require('@/assets/images/main.jpg'),
     isLanguageSelection: true,
   },
   {
@@ -27,7 +27,7 @@ const onboardingData = [
     titleAm: 'እንኳን ወደ ኢትዮጵያ ምግብ በሰላም መጡ',
     descriptionEn: 'Discover the rich flavors and traditions of Ethiopian cooking with authentic recipes passed down through generations.',
     descriptionAm: 'ከትውልድ ወደ ትውልድ የተላለፉ ባህላዊ የምግብ አሰራሮችን ይማሩ',
-    image: require('@/assets/images/icon.png'),
+    image: require('@/assets/images/image-1.jpg'),
   },
   {
     id: 2,
@@ -36,7 +36,7 @@ const onboardingData = [
     titleAm: 'ደረጃ በደረጃ ምግብ አሰራር',
     descriptionEn: 'Follow detailed instructions with timers and visual guides to master every dish perfectly.',
     descriptionAm: 'ፍጹም ምግብ ለማብሰል የሚያስችሉ ዝርዝር መመሪያዎች',
-    image: require('@/assets/images/favicon.png'),
+    image: require('@/assets/images/image-2.jpg'),
   },
   {
     id: 3,
@@ -45,7 +45,7 @@ const onboardingData = [
     titleAm: 'የወደዷቸውን ያስቀምጡ',
     descriptionEn: 'Create your personal cookbook and access recipes offline wherever you are.',
     descriptionAm: 'የራስዎን የምግብ መጽሐፍ ይፍጠሩ እና በየትኛውም ቦታ ያገኙዋቸው',
-    image: require('@/assets/images/icon.png'),
+    image: require('@/assets/images/image-3.jpg'),
   },
 ];
 

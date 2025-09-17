@@ -341,12 +341,12 @@ export default function SettingsScreen() {
       </View>
 
       {/* About */}
-      <View style={styles.section}>
+      <TouchableOpacity style={styles.section} onPress={() => setShowAboutModal(true)}>
         <Text style={styles.sectionTitle}>
           {t('About', 'ስለ')}
         </Text>
         
-        <View style={styles.settingRow}>
+        <View style={styles.settingRow} >
           <View style={styles.settingLeft}>
             <Info size={24} color={theme.colors.text} style={styles.settingIcon} />
             <View style={styles.settingContent}>
@@ -358,13 +358,9 @@ export default function SettingsScreen() {
               </Text>
             </View>
           </View>
-          <TouchableOpacity style={styles.aboutButton} onPress={() => setShowAboutModal(true)}>
-            <Text style={styles.aboutButtonText}>
-              {t('About', 'ስለ')}
-            </Text>
-          </TouchableOpacity>
+           
         </View>
-      </View>
+      </TouchableOpacity>
 
       <View style={styles.appInfo}>
         <Text style={styles.appName}>
