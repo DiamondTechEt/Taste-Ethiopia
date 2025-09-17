@@ -177,7 +177,7 @@ export default function OnboardingScreen() {
       marginTop: 40,
     },
     languageButton: {
-      backgroundColor: 'rgba(255, 255, 255, 0.9)',
+      backgroundColor: 'rgba(255, 102, 0, 0.9)',
       paddingHorizontal: 32,
       paddingVertical: 16,
       borderRadius: 25,
@@ -206,7 +206,7 @@ export default function OnboardingScreen() {
       fontSize: 14,
       color: theme.colors.textSecondary,
       marginTop: 4,
-      lineHeight: 18,
+      lineHeight: 18, 
     },
     selectedLanguageSubtext: {
       color: 'rgba(255, 255, 255, 0.8)',
@@ -241,7 +241,7 @@ export default function OnboardingScreen() {
       position: 'absolute',
       bottom: 0,
       left: 0,
-      right: 0,
+      right: 0, 
       padding: 32,
       paddingBottom: 50,
     },
@@ -269,7 +269,7 @@ export default function OnboardingScreen() {
     skipButton: {
       paddingVertical: 16,
       alignItems: 'center',
-      marginBottom: 16,
+      marginBottom: 16, 
     },
     skipButtonText: {
       fontSize: 16,

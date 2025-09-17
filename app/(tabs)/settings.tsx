@@ -367,7 +367,7 @@ export default function SettingsScreen() {
           {t('Ethiopian Cuisine', 'የኢትዮጵያ ምግብ')}
         </Text>
         <Text style={styles.appVersion}>
-          {t('Version 1.0.0', 'ሥሪት 1.0.0')}
+          {t('Version 1.0.5', 'ሥሪት 1.0.5')}
         </Text>
       </View>
 
